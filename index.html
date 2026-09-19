@@ -70,6 +70,7 @@
   <a class="brand" href="#/">Rizwan Aseef</a>
   <a class="nav" href="#/" data-nav="home">Home</a>
   <a class="nav" href="#/readings" data-nav="readings">The readings</a>
+  <a class="nav" href="#/cia" data-nav="cia">CIA</a>
 </div></header>
 
 <main id="app"></main>
@@ -197,14 +198,23 @@ const READINGS = [
     slot:""
   },
   {
-    id:"nayar", drive:"https://drive.google.com/file/d/1ssArXZhGydLY8acvHNXyz6LzPWhfBWaw/view",
+    id:"nayar", drive:"https://drive.google.com/file/d/1-1G__PUCmMqfMPSwzT_5TRuq-p6xdS8z/view",
     author:"Pramod K. Nayar",
     title:"“New Media, Digitextuality and Public Space: Reading ‘Cybermohalla’”",
-    year:"Postcolonial Text",
-    note:"digital textuality, written from inside an Indian settlement",
-    what:"",
-    passages:[],
-    response:"",
+    year:"Postcolonial Text, vol. 4, no. 1, 2008",
+    note:"digital textuality, written from inside India",
+    what:"Nayar writes about Cybermohalla, a network of five media labs across New Delhi run by CSDS and the NGO Ankur, where fifteen to twenty young practitioners from settlements like LNJP, Dakshinpuri and Nangla Maachhi record the street around them in audio, video, photostories and text. His argument is that the project postcolonialises cyberspace: it takes a technology that is raced, English-dominated and built by First World capital, and localises it until it carries the voices of people the public sphere normally keeps out. The term he borrows for how it does this is Anna Everett's digitextuality, the collage of registers and signifying systems that the new media makes possible.",
+    passages:[
+      {text:"Nayar expands the word postcolonial to mean a set of contrapuntal, counter-cultural and resistant practices that question and re-appropriate, locally and in the vernacular, not only English but the techno-cultural artifacts developed by corporations and monopoly capital in First World nations.", pen:"A way of decolonising. Is this similar to Homi Bhabha's mimicry?"},
+      {text:"Cyberspace itself is raced. He cites Sardar's line that it is the darker side of the west, notes that the ICT revolution was built on the labour of non-white software workers, and that BPO work depends almost entirely on Asian labour. This is the feature Cybermohalla subverts by making cyberspace recognisably native.", pen:""},
+      {text:"Digitextuality, Everett's term, combines digital with intertextuality: the new media build a text by absorbing and transforming other texts and also by embedding whole other texts, analog and digital, seamlessly within the new.", pen:"Multi-modal, multi-textualities: audio, printed and written, videos, images and maps. When you read a text like this you have to bring your own understanding to it, and the modalities involved are very complex."},
+      {text:"Each lab is a room with three computers, recorders and cameras, self-regulated, with practitioners between fifteen and twenty-four spending five days a week recording responses to events, incidents in the street and conversations. Street logs record the familiar and the banal. The tea shop, the barber shop, the broken lamp post and the PCO booth are treated as sites of multiple narratives.", pen:"Cybermohalla is a digital archive that narrativises the daily occurrences of everyday life. It allows for representation of the sections of society that are usually marginalised."},
+      {text:"Adapting Anderson, Nayar argues that if print let nations imagine themselves through shared cultural practice, digital technology lets us imagine and then visualise the Other on screen and in sound, producing a community that is not less real for being differently configured.", pen:"The Cybermohalla is a postcolonial cyber public space where marginalised communities can voice themselves, though they are mediated by the medium."},
+      {text:"Two features of cyberculture make this possible: the inherently distributed nature of the Internet, which makes governance and regulation difficult, and the fact that Cybermohalla is hypertrophic, meaning the medium is modified by the events unfolding on it.", pen:"One characteristic of the internet is that it is distributive in nature. It functions like the events that unfold over it."},
+      {text:"The user, following the cues to click here, co-constructs the venue of the street. The video may be a record of the community, but it takes the ritual of clicks to make it real on screen, so interactivity is not only between technician and person-in-the-street but the process by which the street and the everyday are made together.", pen:"The Cybermohalla is co-constructed by the developers and by the people who read it, and it is rooted in lived, real societies. A lot of our realities are mediated."},
+      {text:"Places, he argues, are not fixed: a place becomes a platform for a community, and in Cybermohalla's case an archive of images that presents a commonality rather than being appropriated by capital, which he calls communitarianisation via digital technology.", pen:"The places are not as static as they may seem. Their actions make them a place, and it becomes a place for people to engage."}
+    ],
+    response:"This is the reading that brought the whole course home, in the most literal way, because it is about Delhi and not about Paris or Cambridge. Everything the earlier texts had argued in the abstract is happening here in a room with three computers: Barthes said the reader produces the text, and Nayar shows an actual reader clicking through a street and co-constructing it; McLuhan said the medium is the message, and Nayar describes a medium that is modified by the events unfolding on it. What I wrote in the margin early on is the definition I have ended up keeping, that a text is a signifying system, a system of signs, and that the question to ask is not what does this text mean but what does this text enable, and how. It also answers Poduval, in a way. If English studies arrived here as a colonial inheritance, this is a project taking a First World technology and making it speak khadi-boli, which is the same move in the other direction.",
     slot:""
   },
   {
@@ -269,6 +279,7 @@ function viewHome(){
   <p>In this portfolio, I will be discussing my understanding and experience of this course. The readings appear in the order the course took them, each with my response to the text, the passages I marked and the scan of my own annotated copy, which you can scroll through on the page itself.</p>
   <ul class="areas">
     <li><a href="#/readings">The readings</a></li>
+    <li><a href="#/cia">CIA</a></li>
   </ul>
   <p class="note">The scans on this site are my own annotated photocopies of the course readings. The texts belong to their authors and publishers; full references are given at the end of each page.</p>
   ${foot()}`;
@@ -283,7 +294,7 @@ function cite(r){
     mcluhan:"McLuhan, Marshall. “The Medium is the Message.” <i>Understanding Media: The Extensions of Man</i>, The MIT Press, 1964, pp. 1–18.",
     poduval:"Poduval, Satish. “To Be in Eng. Lit., Now That… The Voyage Out.” <i>Subject to Change: Teaching Literature in the Nineties</i>, Orient Blackswan, 1998, pp. 143–59.",
     viswanathan:"Viswanathan, Gauri. Introduction. <i>The Masks of Conquest</i>, Oxford UP, 1989, pp. 1–21.",
-    nayar:"Nayar, Pramod K. “New Media, Digitextuality and Public Space: Reading ‘Cybermohalla’.” <i>Postcolonial Text</i>.",
+    nayar:"Nayar, Pramod K. “New Media, Digitextuality and Public Space: Reading ‘Cybermohalla’.” <i>Postcolonial Text</i>, vol. 4, no. 1, 2008.",
     young:"Young, Tory. “Reading: The Discipline of English.” <i>Studying English Literature: A Practical Guide</i>, Cambridge UP, 2008, pp. 24–26."
   };
   return C[r.id]||"";
@@ -310,6 +321,17 @@ function viewReadings(){
   ${READINGS.map((r,n)=>readingBlock(r,n+1)).join("<hr>")}
   <div class="label">References</div>
   ${READINGS.map(r=>`<p class="small">${cite(r)}</p>`).join("")}
+  <div class="prevnext"><span></span><span><a href="#/cia">CIA &rarr;</a></span></div>
+  ${foot()}`;
+}
+
+function viewCIA(){
+  setNav("cia");
+  return `
+  <h1>CIA</h1>
+  <div class="scan"><iframe src="https://drive.google.com/file/d/1NPmlkVcpF1ZxcZzGmd98H_euyDiI585s/preview" title="CIA" loading="lazy" allow="autoplay"></iframe></div>
+  <p class="small soft"><a href="https://drive.google.com/file/d/1NPmlkVcpF1ZxcZzGmd98H_euyDiI585s/view" target="_blank" rel="noopener">Open it full size</a>.</p>
+  <div class="prevnext"><span><a href="#/readings">&larr; The readings</a></span><span></span></div>
   ${foot()}`;
 }
 
@@ -319,6 +341,7 @@ function render(){
   let html;
   if(!a) html=viewHome();
   else if(a==="readings") html=viewReadings();
+  else if(a==="cia") html=viewCIA();
   else if(a==="reading"){ html=viewReadings(); }
   else html=viewHome();
   app.innerHTML=html;
